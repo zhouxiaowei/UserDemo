@@ -12,9 +12,19 @@ extension Droplet {
             return "Hello, world!"
         }
 
+        
+        get("xiaowei") {
+            req in
+            
+            print("请求成功")
+            
+            
+            return "xiaowei"
+        }
         // response to requests to /info domain
         // with a description of the request
         get("info") { req in
+     
             return req.description
         }
 
